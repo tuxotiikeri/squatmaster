@@ -1,0 +1,27 @@
+/* All page margins follow the selected theme, including ultra-wide displays. */
+:root{--page:#f3f6f3;--surface:#fff;--text:#19373d;--muted:#526c60;--border:#dce4dc;--grid:#a4b5ad;background:var(--page);color:var(--text)}
+:root[data-theme=game]{--page:#171a24;--surface:#242530;--text:#f1eee9;--muted:#c9c7d1;--border:#46434e;--grid:#73717d;color-scheme:dark}
+html,body,#root{background:var(--page);min-height:100%;color:var(--text)}
+.app-shell,.game-theme{background:var(--page);color:var(--text)}
+.chart-card,.table-wrap,.export-bar,.help-panel,.result-cards>div,.empty-results,.game-theme .chart-card,.game-theme .table-wrap,.game-theme .export-bar,.game-theme .help-panel,.game-theme .result-cards>div,.game-theme .empty-results{background:var(--surface);color:var(--text);border-color:var(--border)}
+.game-theme p,.game-theme .filter-note,.game-theme .chart-axis,.game-theme .help-panel ol,.game-theme .result-cards span,.game-theme .result-cards small,.game-theme .results-heading p,.game-theme .legend{color:var(--muted)}
+.game-theme thead th,.game-theme .mean-row{background:#302e3a;color:var(--text)}
+.game-theme th,.game-theme td{border-color:var(--border)}
+.chart-card h3{font-size:22px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.chart-card svg{max-height:410px}.chart-card svg text{font-size:22px;fill:var(--muted)}
+.chart-card svg .direction-label{font-size:19px;font-weight:650;fill:var(--text)}
+.chart-zero{stroke:var(--text);stroke-width:1.8;opacity:.55}.chart-guide{stroke:var(--grid);stroke-width:1.2;opacity:.75}
+.chart-axis{font-size:14px;color:var(--muted);gap:15px}.legend{font-size:14px}
+.metric-help button{width:27px;height:27px;font-size:16px}.metric-help>span{width:310px;line-height:1.65;font-size:14px;top:34px;padding:18px;text-align:left}
+.metric-help>span>strong{font-size:15px;display:block;padding-bottom:12px;border-bottom:1px solid #ffffff35}
+.metric-help>span>p{margin:12px 0 0;font-size:14px;line-height:1.6;color:#f3f8f5}.game-theme .metric-help>span>p{color:#f3f8f5}
+.metric-help:hover:before,.metric-help:focus-within:before{content:'';position:absolute;left:0;right:0;top:26px;height:10px}
+.metric-help>span b{color:#92e0cb}.metric-help{font-weight:400}
+.game-theme .metric-help button{background:#34323e;color:#f2eae4;border-color:#807783}
+.game-theme .metric-help>span{background:#39333f;border:1px solid #756b78}
+.depth-gauge .gauge-caption{font-size:13px;font-weight:750}.depth-gauge .gauge-target span{font-size:15px;font-weight:700;top:-9px}
+.rep-overlay span{font-variant-numeric:tabular-nums;font-size:25px}.rep-overlay .rejected-count{font-size:14px!important}
+.result-cards .difficulty-result{font-size:25px}.result-cards span{font-size:14px}
+.table-wrap table{font-size:14px}.table-wrap thead th{font-size:13px}.table-wrap th,.table-wrap td{padding:17px 14px}
+.help-panel h3{font-size:21px}.help-panel p,.help-panel ol{font-size:15px;line-height:1.75}.help-panel h3:not(:first-child){margin-top:24px}
+@media(max-width:760px){.chart-card h3{font-size:19px}.chart-card svg{min-height:185px}.chart-card svg text{font-size:24px}.chart-card svg .direction-label{font-size:21px}.chart-axis{font-size:11px;gap:8px}.metric-help>span{width:min(300px,80vw);left:auto;right:0}.depth-gauge .gauge-target span{font-size:12px}.depth-gauge .gauge-caption{font-size:11px}.rep-overlay span{font-size:22px}.table-wrap table{font-size:13px}.table-wrap thead th{font-size:12px}.help-panel p,.help-panel ol{font-size:14px}.result-cards .difficulty-result{font-size:23px}}
