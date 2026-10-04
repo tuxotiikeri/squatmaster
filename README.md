@@ -1,6 +1,6 @@
 # Squat Master v0.4
 
-English-only, browser-based single-leg squat testing and movement-control game. React, TypeScript, Vite and MediaPipe Tasks Vision. Webcam analysis; video import is a later phase.
+Browser-based single-leg squat testing and movement-control game. React, TypeScript, Vite and MediaPipe Tasks Vision. Webcam analysis; video import is a later phase.
 
 ## Run locally
 
